@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Users</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+
+
+    <h1>Please sign up here!</h1>
+    <form method="post">
+      {{ form.as_p }}
+      {% csrf_token %}
+      <input type="submit" name="btn btn-primary" value="submit">
+    </form>
+    <!-- <ol>
+      {% for person in name_record %}
+      <li>user info</li>
+      <ul>
+        <li>first name:{{person.firstname}}</li>
+        <li>last name:{{person.lastname}}</li>
+        <li>email: {{person.email}}</li>
+      </ul>
+      {% endfor %}
+    </ol> -->
+    </div>
+  </body>
+</html>
